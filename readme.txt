@@ -11,7 +11,7 @@ Installation of the dlib optimization routines http://dlib.net/optimization.html
 
 
 
-Compile:
+Compile (or directly use the provided binary):
 
 path_to_dlib="path_to_dlib_library_root_directory"
 
