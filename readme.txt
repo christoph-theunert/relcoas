@@ -1,5 +1,10 @@
 
 
+This is a simple c++ script to estimate pairwise relatedness coefficients from ancient samples as presented in:
+
+Joint estimation of relatedness coefficients and allele frequencies from ancient samples. Theunert, Racimo, Slatkin, 2017
+
+
 Prerequisites:
 
 Installation of the dlib optimization routines http://dlib.net/optimization.html
