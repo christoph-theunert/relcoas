@@ -2,7 +2,7 @@
 
 This is a simple c++ script to estimate pairwise relatedness coefficients from ancient samples as presented in:
 
-Joint estimation of relatedness coefficients and allele frequencies from ancient samples. Theunert, Racimo, Slatkin, 2017
+Joint estimation of relatedness coefficients and allele frequencies from ancient samples. Theunert, Racimo, Slatkin, Genetics, 2017. https://doi.org/10.1534/genetics.117.200600 
 
 
 Prerequisites:
@@ -43,7 +43,7 @@ For example 3 individuals and 4 sites would look like this:
 The file 'metadata.txt' contains 3 columns with site_number, qk, fk separated by tabs. Note that the site number is not an acutal genomic position but only a consecutive number starting at 1. qk and fk are the site specific derived allele frequencies from the ancient samples (qk) and the reference panel population (fk).
 
 
-These are the simulated relatedness coefficients for pairs of individuals. All other pairs are unrelated.
+These are the simulated relatedness coefficients for pairs of individuals in alleles.txt. All other pairs are unrelated.
 
 #####     Simulated relatedness r_ij for pairs of individuals i and j
 i/j     1       46      47      48
@@ -56,7 +56,7 @@ The individuals were contaminated with the folliwing C rates:
 0.16,0.02,0.16,0.16,0.13,0.07,0.1,0.13,0.01,0.1,0.0,0.16,0.14,0.15,0.15,0.07,0.08,0.09,0.09,0.01,0.17,0.05,0.09,0.06,0.19,0.12,0.13,0.17,0.04,0.15,0.19,0.07,0.06,0.01,0.18,,0.17,0.2,0.09,0.05,0.1,0.09,0.05,0.11,0.09,0.08,0.1,0.07
 
 
-##### relcoas parameter:
+##### relcoas parameters:
 
 -indiv:
 	- a single number of N individuals if you want to calculate all possible pairs for N individuals (e.g. "-indiv 10" if N=10 in your dataset)
