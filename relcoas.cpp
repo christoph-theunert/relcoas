@@ -1,6 +1,9 @@
-
-// g++ -std=c++0x -O3 -I/home/christoph/dlib-19.1/ -o optimize optimization_relatedness_realdata.cpp
-//time ./optimize_release -indiv 1,2,46,47 -in_file Software_Release/release_ws-0.txt -meta_file Software_Release/release_metadata_ws-0.txt  -max_e 0.001 -max_c 0.25
+/*
+* relcoas.cpp
+*
+* Author: Christoph Theunert
+*
+*/
 
 #include <dlib/optimization.h>			// optimization library
 
@@ -53,6 +56,7 @@ void fill_cv_with_randomnumbers(int l, column_vector & pv){
 double mn(double a, double b) {
 	return (a+b)/2.0;
 }
+
 void finalize_results(column_vector & pv){
 		
 			cout<<"###	Estimated relatedness coefficients r_ij"<<endl;
