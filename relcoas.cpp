@@ -347,6 +347,11 @@ fill(up.begin(),up.begin()+sp.lrij,1);
 fill(up.begin()+sp.lrij,up.begin()+sp.lrij+sp.lcontam,max_c);
 fill(up.begin()+sp.lrij+sp.lcontam,up.begin()+sp.lrij+sp.lcontam+lerr,max_e);
 
+	
+for(int i=0;i<param_vector.size();i++) {
+	param_vector(i)=param_vector(i)*up(i);	
+}
+	
 cout<<"N="<<sp.N<<" lrij="<<sp.lrij<<" lcontam="<<sp.lcontam<<" lfreq="<<lfreq<<" L="<<sp.L<<endl;
 
 
